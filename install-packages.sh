@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="/temp/shell-$TIMESTAMP.log"
+LOGFILE="shell-$TIMESTAMP.log"
 
 if [ $ID -ne 0 ]
 then 
