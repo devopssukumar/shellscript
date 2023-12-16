@@ -28,7 +28,7 @@ then
     exit 1
 fi
 
-for TOOL in $@
+for TOOL in $@ # TOOL or PACKAGE (it can be any name)
 do
     yum list installed $TOOL &>> $LOGFILE
     if [ $? -ne 0 ]
